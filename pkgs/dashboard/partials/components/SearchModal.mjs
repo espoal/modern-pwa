@@ -89,7 +89,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
@@ -113,7 +113,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
@@ -125,7 +125,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
@@ -137,7 +137,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
@@ -149,7 +149,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
@@ -167,7 +167,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">
@@ -179,7 +179,7 @@ export const SearchModal = ({
                 <li>
                   <Link
                     className="flex items-center p-2 text-slate-800 hover:text-white hover:bg-indigo-500 rounded group"
-                    to="#0"
+                    to="/"
                     onClick={() => setModalOpen(!modalOpen)}
                   >
                     <svg className="w-4 h-4 fill-current text-slate-400 group-hover:text-white group-hover:text-opacity-50 shrink-0 mr-3" viewBox="0 0 16 16">

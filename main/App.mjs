@@ -3,7 +3,6 @@ import {
   Routes,
   Route,
   useLocation,
-  BrowserRouter
 } from '@vendors/react'
 
 import './css/style.scss'
@@ -25,7 +24,8 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<LoginPage />} />
-      <Route path="/dash" element={<DashboardPage />} />
+      <Route path="/login/" element={<LoginPage />} />
+      <Route path="/dash/" element={<DashboardPage />} />
     </Routes>
 
   )

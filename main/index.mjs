@@ -12,13 +12,12 @@ const jsx = () =>
 
 const container = document.getElementById('root')
 
-const root = createRoot(container)
-root.render(jsx())
+/*const root = createRoot(container)
+root.render(jsx())*/
 
 //TODO: hydrateroot
-/*hydrateRoot(
-  document.getElementById('root'),
+hydrateRoot(
+  container,
   jsx()
-)*/
-
+)
 
