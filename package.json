@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "serve": "firebase emulators:start"
+  },
+  "workspaces": [
+    "dist",
+    "docs",
+    "ext/*",
+    "libs/*",
+    "main",
+    "pkgs/*",
+    "vendors/*"
+  ],
+  "packageManager": "yarn@4.0.0-rc.14",
+  "dependencies": {
+    "@espoal/build": "workspace:^"
+  }
+}
