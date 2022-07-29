@@ -1,0 +1,10 @@
+{
+  "name": "@pkgs/dashboard",
+  "packageManager": "yarn@4.0.0-rc.14",
+  "dependencies": {
+    "@libs/assets": "workspace:^",
+    "@libs/tailwind": "workspace:^",
+    "@vendors/charts": "workspace:^",
+    "@vendors/react": "workspace:^"
+  }
+}

@@ -6159,10 +6159,10 @@ export const resolvedConfig = {
   ],
   "content": {
     "files": [
-      "/home/mamluk/Projects/modern-pwa/libs/tailwind/../../dist/public/index.html",
-      "/home/mamluk/Projects/modern-pwa/libs/tailwind/../../pkgs/**/*.mjs",
-      "/home/mamluk/Projects/modern-pwa/libs/tailwind/../../libs/**/*.mjs",
-      "/home/mamluk/Projects/modern-pwa/libs/tailwind/../../main/**/*.mjs"
+      "/home/mamluk/Projects/modern-pwa/libs/tailwind/dist/public/index.html",
+      "/home/mamluk/Projects/modern-pwa/libs/tailwind/pkgs/**/*.mjs",
+      "/home/mamluk/Projects/modern-pwa/libs/tailwind/libs/**/*.mjs",
+      "/home/mamluk/Projects/modern-pwa/libs/tailwind/main/**/*.mjs"
     ],
     "extract": {},
     "transform": {}

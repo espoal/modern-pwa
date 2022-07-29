@@ -2,14 +2,15 @@ import { React, useEffect } from '@vendors/react'
 import {
   Routes,
   Route,
-  useLocation
+  useLocation,
+  BrowserRouter
 } from '@vendors/react'
 
 import './css/style.scss'
 //import './charts/ChartjsConfig'
 
 import { LoginPage } from '@pkgs/auth/LoginPage.mjs'
-import { BrowserRouter } from '@vendors/react/react.mjs'
+import { DashboardPage } from '@pkgs/dashboard/DashboardPage.mjs'
 
 export const App = () => {
 
@@ -22,13 +23,10 @@ export const App = () => {
   }, [location.pathname]); // triggered on route change
 
   return (
-    <React.StrictMode>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LoginPage />} />
-        </Routes>
-      </BrowserRouter>
-    </React.StrictMode>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/dash" element={<DashboardPage />} />
+    </Routes>
 
   )
 }

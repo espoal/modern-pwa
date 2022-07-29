@@ -5,7 +5,7 @@ __metadata:
   version: 7
   cacheKey: 9
 
-"@babel/runtime@npm:^7.7.6":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.7":
   version: 7.18.9
   resolution: "@babel/runtime@npm:7.18.9"
   dependencies:
@@ -105,6 +105,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@pkgs/dashboard@workspace:^, @pkgs/dashboard@workspace:pkgs/dashboard":
+  version: 0.0.0-use.local
+  resolution: "@pkgs/dashboard@workspace:pkgs/dashboard"
+  dependencies:
+    "@libs/assets": "workspace:^"
+    "@libs/tailwind": "workspace:^"
+    "@vendors/charts": "workspace:^"
+    "@vendors/react": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
 "@tailwindcss/forms@npm:^0.5.2":
   version: 0.5.2
   resolution: "@tailwindcss/forms@npm:0.5.2"
@@ -123,13 +134,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vendors/charts@workspace:^, @vendors/charts@workspace:vendors/charts":
+  version: 0.0.0-use.local
+  resolution: "@vendors/charts@workspace:vendors/charts"
+  dependencies:
+    chart.js: "npm:^3.8.2"
+    chartjs-adapter-moment: "npm:^1.0.0"
+    moment: "npm:^2.29.4"
+  languageName: unknown
+  linkType: soft
+
 "@vendors/react@workspace:^, @vendors/react@workspace:vendors/react":
   version: 0.0.0-use.local
   resolution: "@vendors/react@workspace:vendors/react"
   dependencies:
+    flatpickr: "npm:^4.6.13"
+    prop-types: "npm:^15.8.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-flatpickr: "npm:^3.10.13"
+    react-helmet-async: "npm:^1.3.0"
     react-router-dom: "npm:^6.3.0"
+    react-transition-group: "npm:^4.4.2"
   languageName: unknown
   linkType: soft
 
@@ -363,6 +389,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^3.8.2":
+  version: 3.8.2
+  resolution: "chart.js@npm:3.8.2"
+  checksum: e2989d96e0e9fd75563236a6557a2a3f0bd8e59a678ffadc753e07b199a30c5ccd626fccb997d769d175ad54692eece4e5887cc24ee9d5a80899a480eee8fe0a
+  languageName: node
+  linkType: hard
+
+"chartjs-adapter-moment@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "chartjs-adapter-moment@npm:1.0.0"
+  peerDependencies:
+    chart.js: ^3.0.0
+    moment: ^2.10.2
+  checksum: 6814e0a1e093a8add8580dc1e6689a6e8f992f8c0db68ea87e43c2ff90f553feb2c85461d4b01e598b1a01b017f25e6ecc8bcbc02c314c55dc79d7987e1f1b63
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
@@ -432,6 +475,13 @@ __metadata:
   bin:
     cssesc: bin/cssesc
   checksum: 5e8fcfb6a0fa7f9c05fd6d5a6a6580586310c7dd85c3938e1f199736fd392a9317998e639fde58f63ea786ff1bae5078d6342321c1deddab595fc5bf1764e66e
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.2":
+  version: 3.1.0
+  resolution: "csstype@npm:3.1.0"
+  checksum: fbe7e1dfc64482b370e5ceead6158636dc1eb76b4e6a6d328360548c1951c14e6bbc0516533b58faba4d40ced409324393ffd843febc4bb60302a64692e46788
   languageName: node
   linkType: hard
 
@@ -506,6 +556,16 @@ __metadata:
   resolution: "docs@workspace:docs"
   languageName: unknown
   linkType: soft
+
+"dom-helpers@npm:^5.0.1":
+  version: 5.2.1
+  resolution: "dom-helpers@npm:5.2.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.8.7"
+    csstype: "npm:^3.0.2"
+  checksum: 4744ec87fd4f09ab51037350ef915371ed0479e7920a23edbb08a9a268c16bcbdbe4a6df76e923956a7465d1d4a5e861f7f5e8bdbfe03546a60b100200f9307a
+  languageName: node
+  linkType: hard
 
 "electron-to-chromium@npm:^1.4.202":
   version: 1.4.206
@@ -804,6 +864,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flatpickr@npm:^4.6.13, flatpickr@npm:^4.6.2":
+  version: 4.6.13
+  resolution: "flatpickr@npm:4.6.13"
+  checksum: 88634eca6a6eef99a03a6b45ed5694c8cd107aefa2a7740bb5d4e127efb06b48df23a27cb1d394c3a3097786df65cd82f180c33879cd72fbc9fbc559f41f8fcc
+  languageName: node
+  linkType: hard
+
 "fraction.js@npm:^4.2.0":
   version: 4.2.0
   resolution: "fraction.js@npm:4.2.0"
@@ -1037,6 +1104,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"invariant@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "invariant@npm:2.2.4"
+  dependencies:
+    loose-envify: "npm:^1.0.0"
+  checksum: 5d5f2b8c4ebf418a43764a94c46932620595bbd434897966394d6db2155ce1f3036c37830674d86fb0552334c49cf9831fa9bfb8fc1d151ba4de93f5ffb4d285
+  languageName: node
+  linkType: hard
+
 "ip@npm:^2.0.0":
   version: 2.0.0
   resolution: "ip@npm:2.0.0"
@@ -1120,7 +1196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0":
+"loose-envify@npm:^1.0.0, loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -1152,8 +1228,8 @@ __metadata:
   resolution: "main@workspace:main"
   dependencies:
     "@pkgs/auth": "workspace:^"
+    "@pkgs/dashboard": "workspace:^"
     "@vendors/react": "workspace:^"
-    react-dom: "npm:^18.2.0"
   languageName: unknown
   linkType: soft
 
@@ -1311,6 +1387,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.29.4":
+  version: 2.29.4
+  resolution: "moment@npm:2.29.4"
+  checksum: d275537a30f155cae7f53f6e6d164ccb59b560935f3c6ed0f4a2e6f3503063b491ffa6b4f7e7207501f6fcab92a2d0bb78ed539cde33cadcb91df6b254f7328d
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.1.2":
   version: 2.1.2
   resolution: "ms@npm:2.1.2"
@@ -1402,6 +1485,13 @@ __metadata:
     gauge: "npm:^4.0.3"
     set-blocking: "npm:^2.0.0"
   checksum: c04307b2991f128df6f3bb71c36fa56a65397f56f02a565ed269786ecd5609818e6cae36de3371555e52fdf049a5649a3591ac3bb432a2a0146d67093c4be93c
+  languageName: node
+  linkType: hard
+
+"object-assign@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "object-assign@npm:4.1.1"
+  checksum: f5cd1f2f1e82e12207e4f2377d9d7d90fbc0d9822a6afa717a6dcab6930d8925e1ebbbb25df770c31ff11335ee423459ba65ffa2e53999926c328b806b4d73d6
   languageName: node
   linkType: hard
 
@@ -1563,6 +1653,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prop-types@npm:^15.5.10, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+  version: 15.8.1
+  resolution: "prop-types@npm:15.8.1"
+  dependencies:
+    loose-envify: "npm:^1.4.0"
+    object-assign: "npm:^4.1.1"
+    react-is: "npm:^16.13.1"
+  checksum: 196295f119e0f38ec64b43c1121a7e3bdbfcf66b86a01d50df22a247eb22b644033097b53a3b0961ce64d540c7a2c505c844ff245cb548b4f6eda59bbac6fbf0
+  languageName: node
+  linkType: hard
+
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
@@ -1589,6 +1690,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-fast-compare@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "react-fast-compare@npm:3.2.0"
+  checksum: 83b544e0c35aa1db9d815a22d6a56ae53c619752488e3d989629ed078091a4182fe79c8c2a93aa67a61abcc56b91b9def57da1522670be9016bd54f508196258
+  languageName: node
+  linkType: hard
+
+"react-flatpickr@npm:^3.10.13":
+  version: 3.10.13
+  resolution: "react-flatpickr@npm:3.10.13"
+  dependencies:
+    flatpickr: "npm:^4.6.2"
+    prop-types: "npm:^15.5.10"
+  peerDependencies:
+    react: "*"
+  checksum: 26781cb794bec51332239692fb22672259dbbec9195ad1a8351b4c57ab74beacfc5cda02400b774f5b9adaf47a9c5e64021cf55d1cd77cb09bef401be5876082
+  languageName: node
+  linkType: hard
+
+"react-helmet-async@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "react-helmet-async@npm:1.3.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.12.5"
+    invariant: "npm:^2.2.4"
+    prop-types: "npm:^15.7.2"
+    react-fast-compare: "npm:^3.2.0"
+    shallowequal: "npm:^1.1.0"
+  peerDependencies:
+    react: ^16.6.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
+  checksum: c26bd137322c75d4c15655a2f49c079676732d4a58cc82ce113e3935f7737ba6772930c9ca177aa09b0a77d0cbc1f65a6c9d6f054aab9e6670e2c3ded411e74a
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.13.1":
+  version: 16.13.1
+  resolution: "react-is@npm:16.13.1"
+  checksum: 0c9adc5d984db733fb1dd298f3e94cdec66bc328d27fb11df65971d2cc9a299008bc64baab8fe8e79943df85b445a1008b2cc9e270825d0fd056e5a0d2df8de6
+  languageName: node
+  linkType: hard
+
 "react-router-dom@npm:^6.3.0":
   version: 6.3.0
   resolution: "react-router-dom@npm:6.3.0"
@@ -1610,6 +1753,21 @@ __metadata:
   peerDependencies:
     react: ">=16.8"
   checksum: e18db7761282cb28dda7a4f81c4df696f0484c7f998dc339b4939cb9bb9e8d968e33b627a9616adfed141b588ca1885be6be602c12ff52e81b4bab4bf3e629f8
+  languageName: node
+  linkType: hard
+
+"react-transition-group@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "react-transition-group@npm:4.4.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.5.5"
+    dom-helpers: "npm:^5.0.1"
+    loose-envify: "npm:^1.4.0"
+    prop-types: "npm:^15.6.2"
+  peerDependencies:
+    react: ">=16.6.0"
+    react-dom: ">=16.6.0"
+  checksum: 414bb578ac73584bdc7a940badb22f3189eb91f81e2ae7836922a3e3804ed6cc93520b03bbb1513e0d97d2c5a2c54a51e9b4043b3bb1cf29ccf11b8c6800324e
   languageName: node
   linkType: hard
 
@@ -1777,6 +1935,13 @@ __metadata:
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
   checksum: 9e8f5aeb7cd850a60b5dbf47d42051137c14f58f375d9a70ca227b797d6ffed3dabf659587d2f183231085f1da2dc3067e2af9f5fcd66fb65c98da5fb54a22fb
+  languageName: node
+  linkType: hard
+
+"shallowequal@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "shallowequal@npm:1.1.0"
+  checksum: 9ffaad8074fc1ff1b0ac6b58b8d3f000daa86d8ad1a3122d0dbf218ec777e3c5d2c753223684b46c1b886a66bc9fcd5cfea811e8bb39964220e05845182ae17a
   languageName: node
   linkType: hard
 

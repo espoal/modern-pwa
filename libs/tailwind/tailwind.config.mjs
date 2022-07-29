@@ -8,8 +8,6 @@ const main = base + 'main/**/*.mjs'
 const pkgs = base + 'pkgs/**/*.mjs'
 const libs = base + 'libs/**/*.mjs'
 
-console.log({ index, main})
-
 export const tailwindConfig = {
   content: [
     index, pkgs, libs, main

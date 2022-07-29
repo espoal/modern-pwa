@@ -7,9 +7,11 @@ import { tailwindConfig } from './tailwind.config.mjs'
 const tail = tailwind(tailwindConfig)
 
 export const tailwindPlugin = sassPlugin({async transform(source, resolveDir) {
+  console.log({ resolveDir })
     const {css} = await postcss([
       tail,
       autoprefixer
-    ]).process(source)
+      // TODO: check from option
+    ]).process(source, { from: resolveDir})
     return css
   }})

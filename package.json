@@ -1,7 +1,8 @@
 {
   "scripts": {
     "serve": "firebase emulators:start",
-    "build": "yarn node build.mjs"
+    "build": "yarn node build.mjs",
+    "ssr": "node dist/public/ssr.mjs"
   },
   "workspaces": [
     "dist",
