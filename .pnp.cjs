@@ -1395,7 +1395,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["main", "workspace:main"],\
           ["@pkgs/auth", "workspace:pkgs/auth"],\
-          ["@vendors/react", "workspace:vendors/react"]\
+          ["@vendors/react", "workspace:vendors/react"],\
+          ["react-dom", "virtual:058c374c7b24d9c2ed5db05d7d379a7696be0d2c807f06bf0f92865fd35d283aaf7ca3926fe336f44bfcd8363d5eb7bf953c9e72f834911393aabfdfc2e72303#npm:18.2.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1940,6 +1941,21 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "npm:18.2.0"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:058c374c7b24d9c2ed5db05d7d379a7696be0d2c807f06bf0f92865fd35d283aaf7ca3926fe336f44bfcd8363d5eb7bf953c9e72f834911393aabfdfc2e72303#npm:18.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-953c6f60b4/3/.yarn/berry/cache/react-dom-npm-18.2.0-dd675bca1c-9.zip/node_modules/react-dom/",\
+        "packageDependencies": [\
+          ["react-dom", "virtual:058c374c7b24d9c2ed5db05d7d379a7696be0d2c807f06bf0f92865fd35d283aaf7ca3926fe336f44bfcd8363d5eb7bf953c9e72f834911393aabfdfc2e72303#npm:18.2.0"],\
+          ["@types/react", null],\
+          ["loose-envify", "npm:1.4.0"],\
+          ["react", null],\
+          ["scheduler", "npm:0.23.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:e95437965b4591c2494215aab6acff631ea9c6607f3efe66b69144cdecead0d17ac0f4d7a40b9c43f9b089ed1e238c6d3783b9918a1551ca5e89a0bdafec26b7#npm:18.2.0", {\
         "packageLocation": "./.yarn/__virtual__/react-dom-virtual-ea1e8c138b/3/.yarn/berry/cache/react-dom-npm-18.2.0-dd675bca1c-9.zip/node_modules/react-dom/",\

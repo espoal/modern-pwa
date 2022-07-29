@@ -1153,6 +1153,7 @@ __metadata:
   dependencies:
     "@pkgs/auth": "workspace:^"
     "@vendors/react": "workspace:^"
+    react-dom: "npm:^18.2.0"
   languageName: unknown
   linkType: soft
 

@@ -9,6 +9,7 @@ import './css/style.scss'
 //import './charts/ChartjsConfig'
 
 import { LoginPage } from '@pkgs/auth/LoginPage.mjs'
+import { BrowserRouter } from '@vendors/react/react.mjs'
 
 export const App = () => {
 
@@ -21,9 +22,14 @@ export const App = () => {
   }, [location.pathname]); // triggered on route change
 
   return (
-    <Routes>
-      <Route path="/" element={<LoginPage />} />
-    </Routes>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
+
   )
 }
 

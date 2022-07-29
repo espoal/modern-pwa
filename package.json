@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "serve": "firebase emulators:start"
+    "serve": "firebase emulators:start",
+    "build": "yarn node build.mjs"
   },
   "workspaces": [
     "dist",
